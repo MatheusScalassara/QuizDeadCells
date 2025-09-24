@@ -1,0 +1,126 @@
+body {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.quiz-container {
+    background-color: #272c41;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 100%;
+    border: 3px solid #6c3483;
+}
+
+h1 {
+    text-align: center;
+    color: #e67e22;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.question-box {
+    background-color: #363b58;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #4a4f6e;
+}
+
+.question {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+label:hover {
+    color: #e67e22;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #e67e22;
+}
+
+.buttons-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #d35400;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #8c7270;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+#retry-btn {
+    background-color: #6c3483;
+    margin-left: 15px;
+}
+
+#retry-btn:hover:enabled {
+    background-color: #512b6a;
+}
+
+#result-message {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.5s, color 0.5s;
+    border: 2px solid transparent;
+}
+
+#result-message.success {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+#result-message.partial {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+#result-message.fail {
+    background-color: #c0392b;
+    color: #fff;
+}
