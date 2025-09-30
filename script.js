@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!questao) {
             resultado.textContent = 'Por favor, responda a todas as perguntas antes de enviar!';
-            resultado.className = 'fail';
+            resultado.className = 'Falha';
             tocarSom('Sons/erro.mp3');
             return;
         }
